@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="227dp"
+        android:layout_height="103dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondNum" />
+
+    <EditText
+        android:id="@+id/firstNum"
+        android:layout_width="135dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="Enter Number"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/secondNum"
+        android:layout_width="131dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:hint="Enter Number"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNum" />
+
+    <Button
+        android:id="@+id/toplama"
+        android:layout_width="79dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="100dp"
+
+        android:background="#FF3D00"
+        android:onClick="Sum"
+        android:text="+"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/firstNum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/carpma"
+        android:layout_width="79dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="100dp"
+        android:background="#FF3D00"
+        android:onClick="Product"
+        android:text="*"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/firstNum"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bolme"
+        android:layout_width="79dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="50dp"
+        android:background="#FF3D00"
+        android:onClick="Divide"
+        android:text="/"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/secondNum"
+        app:layout_constraintTop_toBottomOf="@+id/carpma" />
+
+    <Button
+        android:id="@+id/cikarma"
+        android:layout_width="79dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="50dp"
+        android:background="#FF3D00"
+        android:onClick="Minus"
+        android:text="-"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/secondNum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toplama" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
